@@ -1,0 +1,12 @@
+class Solution {
+    public int countSeniors(String[] details) {
+        int seniors = 0;
+        for (int i = 0; i < details.length; i++) {
+            if (Integer.parseInt(details[i].substring(details[i].length() - 4, details[i].length() - 2)) > 60) {
+                seniors++;
+            }
+        }
+
+        return seniors;
+    }
+}
